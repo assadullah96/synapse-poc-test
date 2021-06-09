@@ -383,7 +383,16 @@
         },
         "sqlAdministratorLogin": "[parameters('sqlAdministratorLogin')]",
         "sqlAdministratorLoginPassword": "[parameters('sqlAdministratorLoginPassword')]",
-        "managedVirtualNetwork": "default"
+        "managedVirtualNetwork": "default",
+        "workspaceRepositoryConfiguration": {
+            "type": "WorkspaceGitHubConfiguration",
+            "hostName": "https://github.com/",
+            "accountName": "assadullah96",
+            "repositoryName": "synapse-poc-test",
+            "collaborationBranch": "main",
+            "rootFolder": "101-synapse-poc",
+            "tenantId": "b790f6ff-34c5-4074-bc2e-2f6be41e5870"
+          }
       },
       "resources": [
         {
